@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #001e4d;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+
+.left-side {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffeb3b;
+}
+
+.right-side {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196f3;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 200px;
+    padding: 15px 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-quiz {
+    background-color: #4caf50;
+    color: white;
+}
+
+.start-quiz:hover {
+    background-color: #45a049;
+}
+
+.leaderboard {
+    background-color: #f44336;
+    color: white;
+}
+
+.leaderboard:hover {
+    background-color: #e53935;
+}
+
+#leaderboardpage{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgb(221, 223, 250);
+    box-shadow: 2px 2px grey , -2px -2px grey;
+}
+
+#userleaderboard{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#userleaderboard li {
+    margin-bottom: 2%;
+    margin-left: 5%;
+    width: 80%;
+}
+
+#backbtn {
+    padding: 5px 10px;
+    margin-bottom: 3px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.userName {
+    border: 1px solid grey;
+    position: absolute;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 245, 253);
+}
+.userName img {
+    border: 2px solid rgb(175, 175, 175);
+    background-color: white;
+    width: 10%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+img{
+    border: 2px solid rgb(175, 175, 175);
+    background-color: white;
+    width: 20%;
+    border-radius: 50%;
+}
+
+#start-btn {
+    position: absolute;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+}
+.userAvatar , li{
+    display: flex;
+    background-color: rgb(243, 245, 253);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(175, 175, 175);
+    width: 320px;
+    height: 52px;
+    border-radius: 15px;
+    box-shadow: 2px 2px pink;
+}
+.userAvatar span{
+    margin-right: 10%;
+    font-weight: 700;
+    color: #001e4d;
+}
+
+input {
+    padding: 10px 30px;
+    margin-right: 10px;
+    background: rgb(242, 237, 253);
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600px;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #aaaaaa;
+    color: #000000;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 120px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.correct {
+    background: #9aeabc;
+}
+.incorrect {
+    background: #ff9393;
+}
+
+#timer {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+

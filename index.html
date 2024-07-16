@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Bee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="android-chrome" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
+    <link rel="android-chrome" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="" href="image/x-icon" href="/assets/favicon/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>Welcome to Quiz Bee Information System</h1>
+            <p>Test your knowledge and have fun!</p>
+            <p>Are you ready to challenge yourself?</p>
+        </div>
+        <div class="right-side">
+            <button class="btn start-quiz">Start Quiz</button>
+            <button class="btn leaderboard">Leaderboard</button>
+        </div>
+    </div>
+
+    <div class="userName" style="display: none;">
+        <h1>Fill up the questions</h1>
+        <form id="userNameData" name="userNameData">
+            <input type="text" id="fullName" placeholder="Full Name">
+            <input type="text" id="studentId" placeholder="Student ID">
+            <input type="text" id="campus" placeholder="Campus">
+            <br />
+            <h2>Select your avatar</h2>
+            <label for="avatar1">
+                <input type="radio" id="avatar1" name="avatar" value="avatar1">
+                <img src="assets/avatar/avatar1.png" alt="Avatar 1" width="50" height="50">
+            </label>
+            <label for="avatar2">
+                <input type="radio" id="avatar2" name="avatar" value="avatar2">
+                <img src="assets/avatar/avatar2.png" alt="Avatar 2" width="50" height="50">
+            </label>
+            <label for="avatar3">
+                <input type="radio" id="avatar3" name="avatar" value="avatar3">
+                <img src="assets/avatar/avatar3.png" alt="Avatar 3" width="50" height="50">
+            </label>
+            <label for="avatar4">
+                <input type="radio" id="avatar4" name="avatar" value="avatar4">
+                <img src="assets/avatar/avatar4.png" alt="Avatar 4" width="50" height="50">
+            </label>
+            <label for="avatar5">
+                <input type="radio" id="avatar5" name="avatar" value="avatar5">
+                <img src="assets/avatar/avatar5.png" alt="Avatar 5" width="50" height="50">
+            </label>
+            <label for="avatar6">
+                <input type="radio" id="avatar6" name="avatar" value="avatar6">
+                <img src="assets/avatar/avatar6.png" alt="Avatar 6" width="50" height="50">
+            </label>
+            <button type="button" id="start-btn">Start</button>
+        </form>
+    </div>
+
+    <div id="leaderboardpage" style="display: none;">
+        <button id="backbtn">back</button>
+        <ul id="userleaderboard"></ul>
+    </div>
+
+    <div class="app" style="display: none;">
+        <div class="userAvatar">
+            <img id="avatarImg" src="" alt="Selected Avatar">
+            <span id="displayName"></span>
+        </div>
+        <br>
+        <h1>QUIZ BEE</h1>
+        <div id="category-selection" class="category-selection">
+            <button id="easy-btn" class="btn">Easy</button>
+            <button id="medium-btn" class="btn">Medium</button>
+            <button id="hard-btn" class="btn">Hard</button>
+        </div>
+        <div class="quiz" style="display: none;">
+            <h2 id="current-mode"></h2>
+            <h2 id="question">Question goes here</h2>
+            <div id="timer">Time left: <span id="time">20</span></div>
+            <div id="answer-btn">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <div id="score-display" style="display: none;">Score: <span id="current-score">0</span></div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
