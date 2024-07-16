@@ -1,4 +1,4 @@
-# Quiz-Bee information System
+# Quiz-Bee Information System
 this is school Project
 
 URL:
